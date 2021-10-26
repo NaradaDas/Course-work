@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    const swiper1 = new Swiper('.swiper1', {
+    const swiper1 = new Swiper('#swiper1', {
         // Optional parameters
 
         loop: true,
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
