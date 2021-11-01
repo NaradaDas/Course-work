@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const start = step.currentTarget.dataset.start
 
-            document.querySelectorAll('[class*="catalog__link"]').forEach(function(tabContent) {
-                tabContent.classList.remove('catalog__link-is-active')
+            document.querySelectorAll('.catalog__nav-item').forEach(function(tabContent) {
+                tabContent.classList.remove('catalog__nav-item-active')
             })
-            document.querySelector(`[data-end="${start}"]`).classList.add('catalog__link-is-active')
+            document.querySelector(`[data-end="${start}"]`).classList.add('catalog__nav-item-active')
         })
 
 
