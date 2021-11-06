@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         required: true,
         minLength: 2,
         maxLength: 30,
+        strength: {
+          default: true
+        }
 
       },
       tel: {
@@ -26,17 +29,38 @@ document.addEventListener("DOMContentLoaded", function () {
     messages: {
       name: {
         required: 'Как вас зовут?',
-        minLength: 'Слишком мало символов'
+        minLength: 'Слишком мало символов',
+        strength: 'Недопустимый формат'
       },
       tel: {
         required: 'Укажите ваш телефон',
         minLength: 'Слишком короткий номер',
         function: 'Слишком короткий номер'
       }
+    },
 
+    submitHandler: function (form, values, ajax) {
+      async function formSend(e) {
+        e.preventDefault();
 
-
-
+        const formData = new FormData();
+        let nameField = document.querySelector('.form__name');
+        let phoneField = document.queryrSelector('.form__phone');
+        formData.append('name', nameField.value);
+        formData.append('phone', phoneField.value);
+        let response = await fetch('mail.php', {
+          method: 'POST',
+          body: formData
+        })
+        if (response.ok) {
+          let result = await response.json();
+          alert(result.message);
+          form.reset();
+        } else {
+          alert("Ошибка");
+        }
+      }
     }
+
   })
 })

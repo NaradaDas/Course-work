@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     arrow: false,
     animation: 'shift-toward',
     interactive: true,
+    trigger: 'click',
   });
 
   tippy('#tooltipSecond', {
@@ -11,11 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     arrow: false,
     animation: 'shift-toward',
     interactive: true,
+    trigger: 'click',
   });
   tippy('#tooltipThird', {
     content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  ",
     arrow: false,
     animation: 'shift-toward',
     interactive: true,
+    trigger: 'click',
   });
+
 })

@@ -35,10 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
       });
 
+
+
       //Размещение геобъекта на карте.
       // myMap.geoObjects.add(myGeoObject);
       myMap.geoObjects.add(myPlacemark);
   }
+
+
 
 
 })

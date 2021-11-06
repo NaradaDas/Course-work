@@ -51,7 +51,7 @@ function activateSlider(params) {
 
   params.cardsSlider = new Swiper(`.${params.cardsContainerName}`, {
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 34,
 
     pagination: {
       el: `.${params.sliderWrap} .${params.paginationClassName}`,

@@ -1,83 +1,49 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-    const swiper = new Swiper('#swiper', {
-        // Optional parameters
+  const swiper = new Swiper('#swiper', {
+    // Optional parameters
 
-        loop: true,
+    loop: true,
 
-        // If we need pagination
-
-
-        // Navigation arrows
+    // If we need pagination
 
 
-        // And if we need scrollbar
-
-    });
+    // Navigation arrows
 
 
-    const swiper1 = new Swiper('#swiper1', {
-        // Optional parameters
-
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-
-            clickable: true,
-
-        },
-
-        // Navigation arrows
-
-        // And if we need scrollbar
-           });
-
-    const swiper2 = new Swiper('#swiper2', {
-      // Optional parameters
-
-      loop: true,
-
-      // If we need pagination
-
-
-      // Navigation arrows
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
+    // And if we need scrollbar
 
   });
 
-    // const swiper = new Swiper('.swiper-container', {
-    //   // Optional parameters
-    //   loop: true,
-
-    //   // If we need pagination
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
 
 
+  const swiper2 = new Swiper('#swiper2', {
+    // Optional parameters
+
+    loop: true,
+
+    // If we need pagination
 
 
-    //   // Navigation arrows
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-    //   // And if we need scrollbar
-    //   scrollbar: {
-    //     hide: true,
+      breakpoints: {
+        // when window width is >= 320px
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 34
+        }
 
-    //   },
-
-    //   effect: 'slide'
-
-    // });
+    }
+  })
 })
+      // And if we need scrollbar
+
+
+
+
+
