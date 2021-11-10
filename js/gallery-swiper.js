@@ -16,10 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         breakpoints: {
-            576: {
+            600: {
                 slidesPerView: 2,
                 grid: {
-                    rows: 2
+                    rows: 2,
+
                 },
                 spaceBetween: 34
             },

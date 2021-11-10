@@ -1,7 +1,7 @@
 //
 
 document.addEventListener("DOMContentLoaded", function () {
-  const MOBILE_WIDTH = 580;
+  const MOBILE_WIDTH = 600;
   let acc;
   const accWrap = document.querySelector(".js-accordion-wrap");
   const checkboxes = accWrap.querySelector(".js-checkboxes");

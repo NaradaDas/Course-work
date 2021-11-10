@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const MOBILE_WIDTH = 580;
+  const MOBILE_WIDTH = 600;
 const DESKTOP_WIDTH = 960;
 const btn = document.querySelector('.events__show');
 

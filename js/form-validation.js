@@ -11,9 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         required: true,
         minLength: 2,
         maxLength: 30,
-        strength: {
-          default: true
-        }
 
       },
       tel: {
