@@ -36,9 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
         600: {
           slidesPerView: 2,
           spaceBetween: 34
+        },
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 50
         }
 
-    }
+    },
+
   })
 })
       // And if we need scrollbar

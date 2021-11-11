@@ -10,7 +10,15 @@ const sliderParamsNotMobile = {
   navClassName: "test-navigation",
   navBtnClassName: "nav-btn",
   navPrev: "test-prev",
-  navNext: "test-next"
+  navNext: "test-next",
+  breakpoints: {
+    // when window width is >= 320px
+    960: {
+      slidesPerView: 2,
+      spaceBetween: 49
+    }
+
+}
 };
 
 function getWindowWidth() {
