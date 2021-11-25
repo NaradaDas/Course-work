@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const params = {
-        btnClassName: "main__item-btn",
+        btnClassName: "search__item-btn",
         activeClassName: "is-active",
         disabledClassName: "is-disabled"
     }

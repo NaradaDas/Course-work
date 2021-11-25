@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const choices = new Choices(document.querySelector(".choices"), {
         searchEnabled: false,
+        itemSelectText: '',
         classNames: {
             containerOuter: 'choices choices1',
         },

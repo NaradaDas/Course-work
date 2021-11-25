@@ -11,14 +11,7 @@ const sliderParamsNotMobile = {
   navBtnClassName: "nav-btn",
   navPrev: "test-prev",
   navNext: "test-next",
-  breakpoints: {
-    // when window width is >= 320px
-    960: {
-      slidesPerView: 2,
-      spaceBetween: 49
-    }
 
-}
 };
 
 function getWindowWidth() {
@@ -61,6 +54,8 @@ function activateSlider(params) {
     slidesPerView: 2,
     spaceBetween: 34,
 
+    focusableElements: 'button',
+
     pagination: {
       el: `.${params.sliderWrap} .${params.paginationClassName}`,
       type: "fraction"
@@ -88,7 +83,20 @@ function activateSlider(params) {
         this.pagination.el.remove();
         navigation.remove();
       }
-    }
+    },
+    breakpoints: {
+
+      // when window width is >= 320px
+      1400: {
+
+        slidesPerView: 3,
+        spaceBetween: 50
+
+      },
+      960: {
+        spaceBetween: 50
+      },}
+
   });
 }
 
