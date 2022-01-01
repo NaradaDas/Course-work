@@ -6,7 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
-
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU"></script>
+  <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+  <script defer src="https://unpkg.com/tippy.js@6"></script>
+  <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script defer src="JQuery/choices.min.js "></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.0/jquery-ui.js "></script>
+  <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js "></script>
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js "></script>
+  <script defer src="js/swiper.js "></script>
+  <script defer src="js/choices.js "></script>
+  <script defer src="JQuery/inputmask.min.js "></script>
+  <script defer src="JQuery/just-validate.min.js "></script>
+  <script defer src="js/tabs.js "></script>
+  <script defer src="js/popups.js "></script>
+  <script defer src="js/gallery-swiper.js "></script>
+  <script defer src="js/accordion.js "></script>
+  <script defer src="js/header-search.js "></script>
+  <script defer src="js/books-accordion.js"></script>
+  <script defer src="js/books-slider.js"></script>
+  <script defer src="js/tooltip.js"></script>
+  <script defer src="js/contacts-map.js"></script>
+  <script defer src="js/form-validation.js"></script>
+  <script defer src="js/simplebar.js"></script>
+  <script defer src="js/events-slider.js"></script>
+  <script defer src="js/scroll.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/choices.min.css">
@@ -666,7 +693,7 @@
             <div class="gallery__last-content ">
               <p>
                 Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-                <a class="gallery__last-link " tabindex="0">авторизуйтесь,</a>
+                <a class="gallery__last-link " tabindex="0"><span class="gallery__link-text">авторизуйтесь,</span></a>
                 либо воспользуйтесь лицензией.
               </p>
             </div>
@@ -1301,7 +1328,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link" href="#gallery">В галерею</a>
+                  <a class="accordion__content-link" href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1312,7 +1339,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1323,7 +1350,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1334,7 +1361,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1345,7 +1372,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1356,7 +1383,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1367,7 +1394,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1388,7 +1415,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1399,7 +1426,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1410,7 +1437,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1421,7 +1448,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1432,7 +1459,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1443,7 +1470,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1454,7 +1481,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1472,54 +1499,54 @@
               <h3 tabindex="0"><span class="accordion__heading">C 1400 по 1499 гг.</span></h3>
               <div>
                 <p class="accordion__list">
-                  <a href="#catalog__bottom" class="accordion__link " data-use="a " data-used="a "
-                    data-painter="x-painter ">Бенедетто ди Биндо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="2 " data-used="2 "
-                    data-painter="x-painter ">Бергоньоне, Амброджо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="3 " data-used="3 "
-                    data-painter="x-painter ">Биссоло, Франческо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="4 " data-used="4 "
-                    data-painter="x-painter ">Больтраффио, Джованни</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="5 " data-used="5 "
-                    data-painter="x-painter ">Бонсиньори, Франческо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="6 " data-used="6 "
-                    data-painter="x-painter ">Боттичини, Рафаэлло</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="7 " data-used="7 "
-                    data-painter="x-painter ">Брамантино</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="8 " data-used="8 "
-                    data-painter="x-painter ">Бреа, Людовико</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="9 " data-used="9 "
-                    data-painter="x-painter ">Бьяджо д’Антонио Туччи</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="10 " data-used="10 "
-                    data-painter="x-painter ">Веккьетта</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="11 " data-used="11 "
-                    data-painter="x-painter ">Андреа Верроккьо</a>
-                  <a href="#catalog__bottom" class="accordion__link accordion__link-is-active" data-use="12 "
-                    data-used="12 " data-painter="domeniko ">Доменико Гирландайо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="13 " data-used="13 "
-                    data-painter="x-painter ">Беноццо Гоццоли</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="14 " data-used="14 "
-                    data-painter="x-painter ">Граначчи, Франческо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="15 " data-used="15 "
-                    data-painter="x-painter ">Грегорио ди Чекко</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="16 " data-used="16 "
-                    data-painter="x-painter ">Джованни да Удине</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="17 " data-used="17 "
-                    data-painter="x-painter ">Джованни ди Паоло</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="18 " data-used="18 "
-                    data-painter="x-painter ">Джорджоне</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="19 " data-used="19 "
-                    data-painter="x-painter ">Парентино, Бернардо</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="20 " data-used="20 "
-                    data-painter="x-painter ">Пезеллино</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="21 " data-used="21 "
-                    data-painter="x-painter ">Пьетро Перуджино</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="22 " data-used="22 "
-                    data-painter="x-painter ">Перуцци, Бальдассаре</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="23 " data-used="23 "
-                    data-painter="x-painter ">Пизанелло</a>
-                  <a href="#catalog__bottom" class="accordion__link " data-use="24 " data-used="24 "
-                    data-painter="x-painter ">Пинтуриккьо</a>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="a " data-used="a "
+                    data-painter="x-painter "><span class="accordion__text">Бенедетто ди Биндо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="2 " data-used="2 "
+                    data-painter="x-painter "><span class="accordion__text">Бергоньоне, Амброджо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="3 " data-used="3 "
+                    data-painter="x-painter "><span class="accordion__text">Биссоло, Франческо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="4 " data-used="4 "
+                    data-painter="x-painter "><span class="accordion__text">Больтраффио, Джованни</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="5 " data-used="5 "
+                    data-painter="x-painter "><span class="accordion__text">Бонсиньори, Франческо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="6 " data-used="6 "
+                    data-painter="x-painter "><span class="accordion__text">Боттичини, Рафаэлло</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="7 " data-used="7 "
+                    data-painter="x-painter "><span class="accordion__text">Брамантино</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="8 " data-used="8 "
+                    data-painter="x-painter "><span class="accordion__text">Бреа, Людовико</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="9 " data-used="9 "
+                    data-painter="x-painter "><span class="accordion__text">Бьяджо д'Антонио Туччи</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="10 " data-used="10 "
+                    data-painter="x-painter "><span class="accordion__text">Веккьетта</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="11 " data-used="11 "
+                    data-painter="x-painter "><span class="accordion__text">Андреа Верроккьо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link accordion__link-is-active" data-use="12 "
+                    data-used="12 " data-painter="domeniko "><span class="accordion__text">Доменико Гирландайо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="13 " data-used="13 "
+                    data-painter="x-painter "><span class="accordion__text">Беноццо Гоццоли</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="14 " data-used="14 "
+                    data-painter="x-painter "><span class="accordion__text">Граначчи, Франческо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="15 " data-used="15 "
+                    data-painter="x-painter "><span class="accordion__text">Грегорио ди Чекко</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="16 " data-used="16 "
+                    data-painter="x-painter "><span class="accordion__text">Джованни да Удине</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="17 " data-used="17 "
+                    data-painter="x-painter "><span class="accordion__text">Джованни ди Паоло</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="18 " data-used="18 "
+                    data-painter="x-painter "><span class="accordion__text">Джорджоне</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="19 " data-used="19 "
+                    data-painter="x-painter "><span class="accordion__text">Парентино, Бернардо</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="20 " data-used="20 "
+                    data-painter="x-painter "><span class="accordion__text">Пезеллино</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="21 " data-used="21 "
+                    data-painter="x-painter "><span class="accordion__text">Пьетро Перуджино</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="22 " data-used="22 "
+                    data-painter="x-painter "><span class="accordion__text">Перуцци, Бальдассаре</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="23 " data-used="23 "
+                    data-painter="x-painter "><span class="accordion__text">Пизанелло</span></button>
+                  <button href="#catalog__bottom" class="accordion__link " data-use="24 " data-used="24 "
+                    data-painter="x-painter "><span class="accordion__text">Пинтуриккьо</span></button>
                 </p>
               </div>
               <h3 tabindex="0"><span class="accordion__heading">C 1500 по 1599 гг.</span></h3>
@@ -1529,7 +1556,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1540,7 +1567,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1551,7 +1578,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1562,7 +1589,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1573,7 +1600,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1584,7 +1611,7 @@
                   <div class="accordion__item-content ">
                     <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                     <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a class="accordion__content-link " href="#gallery">В галерею</a>
+                    <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                   </div>
                 </div>
               </div>
@@ -1607,7 +1634,7 @@
                 <p class="painter__description ">
                   Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
                 </p>
-                <a class="painter__link " href="#gallery">В галерею</a>
+                <a class="painter__link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
               </div>
               <div class="painter painter-is-active" data-painter-face="domeniko ">
                 <picture class="painter__picture ">
@@ -1651,7 +1678,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1662,7 +1689,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1673,7 +1700,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1684,7 +1711,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1695,7 +1722,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1706,7 +1733,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1717,7 +1744,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1738,7 +1765,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1749,7 +1776,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1760,7 +1787,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1771,7 +1798,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1782,7 +1809,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1793,7 +1820,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1804,7 +1831,7 @@
                 <div class="accordion__item-content ">
                   <h3 class="accordion__tittle ">Здесь пока пусто</h3>
                   <p class="accordion__description ">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                  <a class="accordion__content-link " href="#gallery">В галерею</a>
+                  <a class="accordion__content-link " href="#gallery"><span class="accordion__content-text">В галерею</span></a>
                 </div>
               </div>
             </div>
@@ -1823,11 +1850,11 @@
                 <div class="events__content " aria-label="Слайд" role="banner" tabindex="0">
                   <picture class="events__picture ">
 
-                    <source srcset="/img/events/1/eventsX1920-1.jpg" media="(min-width:1400px)">
-                    <source srcset="/img/events/1/eventsX1024-1.jpg" media="(min-width:960px)">
-                    <source srcset="/img/events/1/eventsX768-1.jpg" media="(min-width:600px)">
+                    <source srcset="img/events/1/eventsX1920-1.jpg" media="(min-width:1400px)">
+                    <source srcset="img/events/1/eventsX1024-1.jpg" media="(min-width:960px)">
+                    <source srcset="img/events/1/eventsX768-1.jpg" media="(min-width:600px)">
 
-                    <img src="/img/events/1/eventsX320-1.jpg" alt="Изображение события" class="events__img">
+                    <img src="img/events/1/eventsX320-1.jpg" alt="Изображение события" class="events__img">
                   </picture>
                   <div class="events__slide-body">
                     <span class="events__slide-description events__sliade-description1">
@@ -2425,34 +2452,7 @@
       <img src="img/footer/logo.svg" alt="Логотип" class="footer__logo">
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-  <script src="js/choices.min.js "></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js "></script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js "></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js "></script>
-  <script src="js/swiper.js "></script>
-  <script src="js/choices.js "></script>
-  <script src="js/inputmask.min.js "></script>
-  <script src="js/just-validate.min.js "></script>
-  <script src="js/tabs.js "></script>
-  <script src="js/popups.js "></script>
-  <script src="js/gallery-swiper.js "></script>
-  <script src="js/accordion.js "></script>
-  <script src="js/header-search.js "></script>
-  <script src="js/books-accordion.js"></script>
-  <script src="js/books-slider.js"></script>
-  <script src="js/tooltip.js"></script>
-  <script src="js/contacts-map.js"></script>
-  <script src="js/form-validation.js"></script>
-  <script src="js/simplebar.js"></script>
-  <script src="js/events-slider.js"></script>
-  <script src="js/scroll.js"></script>
+
 
 
 
